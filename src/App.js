@@ -16,10 +16,10 @@ import "./categories.styles.scss";
 const App = () => {
 	return (
 		<Routes>
-			<Route path="/" element={<Nav />}>
+			<Route path='/' element={<Nav />}>
 				<Route index element={<Home />} />
-				<Route path="shop/*" element={<Shop />} />
-				<Route path="auth" element={<Authentication />} />
+				<Route path='shop/*' element={<Shop />} />
+				<Route path='auth' element={<Authentication />} />
 				<Route path='checkout' element={<Checkout  />} />
 			</Route>
 		</Routes>

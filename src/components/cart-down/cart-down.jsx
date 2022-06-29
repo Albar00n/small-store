@@ -1,12 +1,15 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from "../../context/cart.context";
+import { StoreContext } from "../../context/store.context";
 import CartItem from '../cart-item/cart-item'
 import Button from '../button/ButtonStyle'
 import "./cart-down.scss";
 
 const CartDown = () => {
     const { cartItems } = useContext(CartContext);
+    const { storiesMap } = useContext(StoreContext);
+    console.log(storiesMap);
     const navgiate = useNavigate();
 
     const goToCheckoutHandler = () => {
