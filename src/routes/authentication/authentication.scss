@@ -1,0 +1,26 @@
+.authentication{
+    display: flex;
+    justify-content: space-around;
+    // width: 900px;
+    margin: 30px auto;
+}
+
+@media screen and (max-width:800px) {
+    .authentication {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .authentication {
+
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+}
